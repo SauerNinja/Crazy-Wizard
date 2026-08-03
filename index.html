@@ -340,6 +340,99 @@ strong{color:var(--brass);font-weight:600;}
 .cv-friction line{stroke:var(--rust);stroke-width:2;}
 
 .cv-loop{stroke:var(--rust);stroke-width:1.6;opacity:.85;}
+
+/* Epistemic closure diagram */
+.ec-box{fill:var(--ink);stroke:var(--ink-line);stroke-width:1;}
+.ec-label{font-family:var(--font-mono);font-size:8.5px;fill:var(--parchment-dim);letter-spacing:.02em;}
+.ec-sublabel{font-family:var(--font-mono);font-size:8px;fill:var(--parchment-dim);opacity:.7;}
+.ec-sublabel-rust{font-family:var(--font-mono);font-size:8px;fill:var(--rust);opacity:.85;}
+.ec-arrow-open{stroke:var(--teal);stroke-width:1.6;}
+.ec-arrowhead-open{fill:var(--teal);}
+.ec-belief-open{fill:none;stroke:var(--teal);stroke-width:1.6;}
+.ec-wall{stroke:var(--rust);stroke-width:2.4;}
+.ec-arrow-closed{stroke:var(--rust);stroke-width:1.4;}
+.ec-arrowhead-closed{fill:var(--rust);}
+.ec-belief-closed{fill:none;stroke:var(--rust);stroke-width:1.6;}
+.ec-selfloop{stroke:var(--rust);stroke-width:1.2;stroke-dasharray:2 3;opacity:.8;}
+
+/* Double bind loop diagram */
+.db-box{fill:var(--ink);stroke:var(--ink-line);stroke-width:1;}
+.db-label{font-family:var(--font-mono);font-size:8px;fill:var(--parchment-dim);}
+.db-label-sm{font-family:var(--font-mono);font-size:9px;fill:var(--parchment-dim);}
+.db-label-sm-rust{font-family:var(--font-mono);font-size:10px;fill:var(--rust);}
+.db-diamond{fill:var(--ink);stroke:var(--brass);stroke-width:1.4;}
+.db-arrow{stroke:var(--brass);stroke-width:1.4;}
+.db-arrowhead{fill:var(--brass);}
+.db-loop{stroke:var(--rust);stroke-width:1.3;opacity:.8;}
+.db-arrowhead-rust{fill:var(--rust);}
+
+/* Reality monitoring sorter diagram */
+.rm-lane-label-rust{font-family:var(--font-mono);font-size:9px;fill:var(--rust);letter-spacing:.05em;}
+.rm-lane-label-teal{font-family:var(--font-mono);font-size:9px;fill:var(--teal);letter-spacing:.05em;}
+.rm-box-rust{fill:none;stroke:var(--rust);stroke-width:1.4;}
+.rm-box-teal{fill:none;stroke:var(--teal);stroke-width:1.4;}
+.rm-label{font-family:var(--font-mono);font-size:8px;fill:var(--parchment-dim);}
+.rm-label-sm{font-family:var(--font-mono);font-size:8.5px;fill:var(--parchment);}
+.rm-line{stroke:var(--parchment-dim);stroke-width:1.2;opacity:.6;}
+.rm-arrowhead{fill:var(--parchment-dim);opacity:.7;}
+.rm-sorter{fill:var(--ink);stroke:var(--brass);stroke-width:1.4;}
+.rm-line-teal{stroke:var(--teal);stroke-width:1.3;opacity:.8;}
+.rm-arrowhead-teal{fill:var(--teal);}
+.rm-line-rust{stroke:var(--rust);stroke-width:1.3;opacity:.9;}
+.rm-arrowhead-rust{fill:var(--rust);}
+.rm-out-label-teal{font-family:var(--font-mono);font-size:8px;fill:var(--teal);}
+.rm-out-label-rust{font-family:var(--font-mono);font-size:8px;fill:var(--rust);}
+.rm-out-sub-rust{font-family:var(--font-mono);font-size:7px;fill:var(--rust);opacity:.75;}
+
+/* Transliminality membrane diagram */
+.tl-panel-label{font-family:var(--font-mono);font-size:9px;fill:var(--teal);letter-spacing:.05em;}
+.tl-panel-label-rust{font-family:var(--font-mono);font-size:9px;fill:var(--rust);letter-spacing:.05em;}
+.tl-grid{stroke:var(--teal);stroke-width:1.2;opacity:.6;}
+.tl-grid-torn{stroke:var(--rust);stroke-width:1.2;opacity:.55;stroke-dasharray:3 3;}
+.tl-dot{fill:var(--parchment-dim);}
+.tl-dot-rust{fill:var(--rust);opacity:.85;}
+
+/* Social exoskeleton diagram */
+.se-roof{stroke:var(--brass);stroke-width:2.2;}
+.se-scaffold{stroke:var(--teal);stroke-width:1.3;opacity:.8;}
+.se-pillar-gone{stroke:var(--parchment-dim);stroke-width:1.4;stroke-dasharray:2 3;opacity:.6;}
+.se-label{font-family:var(--font-mono);font-size:9px;fill:var(--parchment-dim);}
+.se-roof-fallen{stroke:var(--rust);stroke-width:2.2;}
+.se-label-rust{font-family:var(--font-mono);font-size:9px;fill:var(--rust);}
+
+/* Historical checkpoint timeline */
+.ht-label{font-family:var(--font-mono);font-size:11px;fill:var(--parchment);}
+.ht-label-rust{font-family:var(--font-mono);font-size:11px;fill:var(--rust);}
+.ht-bar{fill:var(--brass);opacity:.55;}
+.ht-bar-rust{fill:var(--rust);}
+.ht-value{font-family:var(--font-mono);font-size:9.5px;fill:var(--parchment-dim);}
+.ht-value-rust{font-family:var(--font-mono);font-size:9.5px;fill:var(--rust);}
+
+/* Illusion of control bar chart */
+.ic-axis{stroke:var(--ink-line);stroke-width:1;}
+.ic-axis-label{font-family:var(--font-mono);font-size:9px;fill:var(--parchment-dim);}
+.ic-axis-title{font-family:var(--font-mono);font-size:9px;fill:var(--parchment-dim);}
+.ic-bar-teal{fill:var(--teal);opacity:.75;}
+.ic-bar-mid{fill:var(--brass);opacity:.75;}
+.ic-bar-rust{fill:var(--rust);opacity:.75;}
+.ic-bar-rust2{fill:var(--rust);opacity:.95;}
+.ic-cat{font-family:var(--font-mono);font-size:9px;fill:var(--parchment-dim);}
+
+/* Rumination spiral */
+.rt-spiral{stroke:var(--rust);stroke-width:1.6;opacity:.85;}
+.rt-center{fill:var(--rust);}
+.rt-label{font-family:var(--font-mono);font-size:10px;fill:var(--parchment-dim);}
+.rt-label-dim{font-family:var(--font-mono);font-size:9px;fill:var(--parchment-dim);opacity:.8;}
+.rt-label-dim-rust{font-family:var(--font-mono);font-size:9px;fill:var(--rust);opacity:.9;}
+
+/* Witness three-step flow */
+.ws-node{fill:var(--ink);stroke:var(--teal);stroke-width:1.6;}
+.ws-node-rust{fill:var(--ink);stroke:var(--rust);stroke-width:1.6;}
+.ws-num{font-family:var(--font-display);font-weight:600;font-size:20px;fill:var(--teal);}
+.ws-label{font-family:var(--font-mono);font-size:9.5px;fill:var(--parchment-dim);}
+.ws-label-rust{font-family:var(--font-mono);font-size:9.5px;fill:var(--rust);}
+.ws-arrow{stroke:var(--brass);stroke-width:1.4;}
+.ws-arrowhead{fill:var(--brass);}
 .cv-arrowhead{fill:var(--rust);}
 .cv-self-node{fill:var(--rust);}
 
@@ -484,9 +577,79 @@ footer a{color:var(--brass);text-decoration:none;}
 <section id="premise">
   <div class="wrap">
     <span class="eyebrow">01 — The Premise</span>
-    <h2>No mystery school ever worked alone</h2>
-    <p class="lede">Every tradition built around hidden or esoteric knowledge — Hermetic orders, Kabbalistic study circles, alchemical guilds, shamanic lineages, monastic contemplative schools — required initiates to study under a teacher or inside a community. That wasn't gatekeeping for its own sake. It was a safety structure, built the hard way, over centuries of watching what happens when it's missing.</p>
-    <p>Strip that structure away and the research doesn't stop being interesting. It stops having anyone in the room who can say <em>"you're stretching that connection too far."</em> This site is about what fills that gap when nobody does, and how to keep a research practice grounded when it's just you and the books.</p>
+    <h2>The same mind that's good at this is the mind most at risk from it</h2>
+    <p class="lede">This material doesn't attract people at random. It has a real, measurable pull on a specific kind of mind — and understanding why is the fastest way to understand both what makes esoteric study genuinely valuable and where it can go wrong.</p>
+
+    <h3>Who this tends to pull in</h3>
+    <p>Personality research consistently finds that interest in esoteric, occult, and paranormal material correlates with <strong>Openness to Experience</strong> — the Big Five trait covering intellectual curiosity, comfort with ambiguity, and a pull toward unconventional ideas. It's one of the more reliably replicated findings in this area of psychology, showing up across independent samples using different measures. The same research generally finds this has little to do with intelligence or education; it's a difference in temperament, not capability.</p>
+    <div class="cite">Smith, M.D., Johnson, J.J., Hathaway, W. "Personality Contributions to Belief in Paranormal Phenomena." <em>Individual Differences Research</em>, 2009. MacDonald, D.A. "Spirituality: Description, Measurement, and Relation to the Five Factor Model of Personality." <em>Journal of Personality</em>, 2000.</div>
+    <p>Underneath that trait sits something more mechanical. Neuroscience research on paranormal belief has repeatedly linked it to a cognitive style built around <strong>loose, associative pattern-detection</strong> — a lower threshold for deciding that two things are meaningfully connected. Studies manipulating dopamine levels find they shift this threshold directly: raise dopaminergic activity and people get measurably better at spotting faces in noise, connections between unrelated words, similarities between random shapes — the same signal-detection setting that, turned up further, produces both paranormal belief and, at the far end, positive psychotic symptoms.</p>
+    <div class="cite">Krummenacher, P., Mohr, C., Haker, H., Brugger, P. "Dopamine, Paranormal Belief, and the Detection of Meaningful Stimuli." <em>Journal of Cognitive Neuroscience</em>, 22(8), 2010.</div>
+
+    <h3>The same wiring is a genuine asset</h3>
+    <p>This isn't a deficit dressed up as a personality trait. The identical associative machinery is implicated directly in creativity research: the same loose, far-reaching pattern-detection that lets someone find a hidden thread through an alchemical text is what lets a scientist notice an unexpected connection between two fields, or a poet land a metaphor that shouldn't work but does. Researchers in this area have described paranormal ideation and creative ideation as drawing on the same underlying cognitive resource — not a coincidence of personality, but two expressions of one trait.</p>
+    <div class="cite">Brugger, P. "From Haunted Brain to Haunted Science: A Cognitive Neuroscience View of Paranormal and Pseudoscientific Thought." In <em>Hauntings and Poltergeists</em>, 2001.</div>
+    <p>Put plainly: if you're the kind of person who finds esoteric systems magnetic — who can hold a dozen symbolic threads at once and sense where they connect — that's not a warning sign by itself. It's very likely the same trait that makes you good at pattern-heavy work generally. The site isn't arguing this interest is a problem. It's arguing that the exact same setting that makes the pattern-detection generative in a studio, a lab, or a peer group can misfire badly with no one else checking its output.</p>
+
+    <h3>There's a name for the underlying dial</h3>
+    <p>Psychologists have a term for the broader trait these findings keep circling: <strong>transliminality</strong> — how easily material crosses the threshold between unconscious and conscious awareness. It's measured as a single dimension underlying several things that look unrelated on the surface: absorption in fantasy or art, heightened sensitivity to stimuli, vivid dream life, and a pull toward mystical or magical thinking. High scorers tend to be unusually creative. The same research measuring this trait has also found it correlates with schizotypy — the same broad vulnerability referenced throughout this site. It's a genuinely double-edged dial, not a euphemism for pathology, and where any one person lands on it says nothing on its own about where they'll end up.</p>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels showing a mostly-closed filter letting little through versus a torn filter flooded with material">
+        <text x="14" y="18" class="tl-panel-label">LOWER TRANSLIMINALITY</text>
+        <line x1="14" y1="26" x2="30" y2="80" class="tl-grid"/><line x1="46" y1="26" x2="52" y2="80" class="tl-grid"/>
+        <line x1="78" y1="26" x2="74" y2="80" class="tl-grid"/><line x1="110" y1="26" x2="96" y2="80" class="tl-grid"/>
+        <line x1="142" y1="26" x2="118" y2="80" class="tl-grid"/><line x1="174" y1="26" x2="140" y2="80" class="tl-grid"/>
+        <line x1="206" y1="26" x2="162" y2="80" class="tl-grid"/><line x1="238" y1="26" x2="184" y2="80" class="tl-grid"/>
+        <line x1="270" y1="26" x2="206" y2="80" class="tl-grid"/><line x1="302" y1="26" x2="228" y2="80" class="tl-grid"/>
+        <line x1="334" y1="26" x2="250" y2="80" class="tl-grid"/><line x1="366" y1="26" x2="272" y2="80" class="tl-grid"/>
+        <line x1="398" y1="26" x2="294" y2="80" class="tl-grid"/>
+        <circle cx="90" cy="53" r="3" class="tl-dot"/><circle cx="220" cy="53" r="3" class="tl-dot"/>
+
+        <text x="14" y="115" class="tl-panel-label-rust">HIGHER TRANSLIMINALITY</text>
+        <line x1="14" y1="123" x2="34" y2="176" class="tl-grid-torn"/><line x1="60" y1="123" x2="70" y2="150" class="tl-grid-torn"/>
+        <line x1="120" y1="123" x2="108" y2="176" class="tl-grid-torn"/><line x1="200" y1="123" x2="190" y2="176" class="tl-grid-torn"/>
+        <line x1="280" y1="123" x2="270" y2="150" class="tl-grid-torn"/><line x1="340" y1="123" x2="330" y2="176" class="tl-grid-torn"/>
+        <line x1="390" y1="123" x2="398" y2="176" class="tl-grid-torn"/>
+        <circle cx="60" cy="150" r="3" class="tl-dot-rust"/><circle cx="95" cy="160" r="2.5" class="tl-dot-rust"/>
+        <circle cx="150" cy="140" r="3" class="tl-dot-rust"/><circle cx="180" cy="165" r="2.5" class="tl-dot-rust"/>
+        <circle cx="230" cy="145" r="3" class="tl-dot-rust"/><circle cx="255" cy="170" r="2.5" class="tl-dot-rust"/>
+        <circle cx="300" cy="150" r="3" class="tl-dot-rust"/><circle cx="360" cy="160" r="3" class="tl-dot-rust"/>
+        <circle cx="130" cy="175" r="2" class="tl-dot-rust"/><circle cx="200" cy="155" r="2" class="tl-dot-rust"/>
+      </svg>
+      <p class="pv-caption">Same underlying dial, two settings. A tighter filter lets a little through at a time; a looser one — creative on a good day — can flood under enough input.</p>
+    </div>
+    <div class="cite">Lange, R., Thalbourne, M.A., Houran, J., Storm, L. "The Revised Transliminality Scale: Reliability and Validity Data From a Rasch Top-Down Purification Procedure." <em>Consciousness and Cognition</em>, 9(4), 2000. Thalbourne, M.A., Delin, P.S. "A Common Thread Underlying Belief in the Paranormal, Mystical Experience, and Psychopathology." <em>Journal of Parapsychology</em>, 58, 1994.</div>
+
+    <h3>No mystery school ever worked alone</h3>
+    <p>Every tradition built around hidden or esoteric knowledge — Hermetic orders, Kabbalistic study circles, alchemical guilds, shamanic lineages, monastic contemplative schools — required initiates to study under a teacher or inside a community. That wasn't gatekeeping for its own sake. It was a safety structure, built the hard way, over centuries of watching what happens when a mind naturally built to find connections has nobody to check which ones are real.</p>
+    <p>Strip that structure away and the research doesn't stop being interesting, or stop being a legitimate use of a genuinely valuable trait. It stops having anyone in the room who can say <em>"you're stretching that connection too far."</em> This site is about what fills that gap when nobody does, and how to keep a research practice grounded when it's just you and the books.</p>
+
+    <h3>What that supervision actually looked like</h3>
+    <p>This wasn't a vague gesture toward "tradition." Specific systems built specific, sometimes rigid checkpoints in:</p>
+    <p>Classical Kabbalistic study carried a widely cited restriction limiting deep study of Lurianic Kabbalah to those over forty, married, and already grounded in Talmudic law — the reasoning given was that the material required emotional stability and a finished foundation before it was safe to build on. (Historians note the rule was applied inconsistently and is partly mythologized in retrospect, but the underlying instinct — don't hand this to someone ungrounded — was real and taken seriously enough to write down.) The Hermetic Order of the Golden Dawn, founded in London in 1888, built an explicit graded curriculum: an aspirant had to pass a written examination on each of four elemental grades, then further examinations and the consent of existing adepts, before being permitted to advance — up to eight formal checkpoints between entry and full initiation. Rinzai Zen structures koan study around <em>sanzen</em>, a private, recurring interview where a student presents their understanding directly to a teacher who tests it — a relationship that typically runs for years, sometimes decades, precisely because no one is trusted to self-certify their own insight.</p>
+    <div class="cite">Chabad.org, "Is Kabbalah for Everyone?" (on the 1756 Brody Cherem and its historical context). Denisoff, D. "The Hermetic Order of the Golden Dawn, 1888–1901." <em>BRANCH: Britain, Representation and Nineteenth-Century History.</em> Wikipedia, "Rinzai school," on sanzen and koan training structure.</div>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three historical traditions compared by the number and type of checkpoints required before independent study was permitted">
+        <text x="10" y="24" class="ht-label">Kabbalah (traditional)</text>
+        <rect x="10" y="32" width="330" height="16" rx="2" class="ht-bar"/>
+        <text x="345" y="44" class="ht-value">age 40 + marriage + Talmudic grounding</text>
+
+        <text x="10" y="80" class="ht-label">Golden Dawn (1888–)</text>
+        <rect x="10" y="88" width="230" height="16" rx="2" class="ht-bar"/>
+        <text x="245" y="100" class="ht-value">8 examinations across 2 orders</text>
+
+        <text x="10" y="136" class="ht-label">Rinzai Zen koan training</text>
+        <rect x="10" y="144" width="280" height="16" rx="2" class="ht-bar"/>
+        <text x="295" y="156" class="ht-value">years of recurring sanzen with a teacher</text>
+
+        <text x="10" y="182" class="ht-label-rust">Solitary digital research</text>
+        <rect x="10" y="176" width="6" height="4" class="ht-bar-rust"/>
+        <text x="24" y="182" class="ht-value-rust">— no external checkpoint at all</text>
+      </svg>
+      <p class="pv-caption">Different traditions, wildly different content — but every one of them built in a checkpoint nobody could skip. That's the piece solitary research online tends to have zero of.</p>
+    </div>
   </div>
 </section>
 
@@ -519,6 +682,38 @@ footer a{color:var(--brass);text-decoration:none;}
     <p>Psychiatrist <strong>Klaus Conrad</strong> mapped this territory in 1958, studying the earliest phase of psychotic breaks in a large sample of patients. He described a prodromal state he called <em>Trema</em> — a mounting sense that the ordinary world has become unusually charged with meaning, that something important is about to reveal itself — which can precede a phase he called <em>Apophänie</em>: the moment scattered perceptions crystallize into a single, all-explaining revelation.</p>
     <div class="cite">Conrad, K. <em>Die beginnende Schizophrenie</em> (1958). English overview: Mishara, A.L. "Klaus Conrad (1905–1961): Delusional Mood, Psychosis, and Beginning Schizophrenia." <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2800156/" target="_blank" rel="noopener">PMC2800156</a></div>
     <p>Conrad wasn't describing occultists — he was describing early schizophrenia in a psychiatric ward. But the shape of the process he documented is the same shape that intensive, unmentored esoteric research can induce on its own: hours spent training attention to find hidden significance in ordinary symbols is, mechanically, practice at generating exactly the state he described.</p>
+
+    <h3>The biological version of the same story</h3>
+    <p>Conrad was describing what this feels like from the inside. Psychiatrist Shitij Kapur's <strong>aberrant salience</strong> model, one of the most cited frameworks in modern psychosis research, describes the same territory from underneath: dopamine's core job isn't pleasure, it's flagging what's <em>important</em> — deciding which things in the environment deserve attention and meaning. When that system misfires, ordinary stimuli start getting tagged as urgently significant, and the felt sense of revelation Conrad documented is what that misfire feels like from inside the person having it. It's worth being fair to the current state of the science: a 20-year retrospective on Kapur's model found some of its specific predictions haven't held up well against newer data, even though the general framework remains the field's standard shorthand for how delusions form.</p>
+    <div class="cite">Kapur, S. "Psychosis as a State of Aberrant Salience: A Framework Linking Biology, Phenomenology, and Pharmacology in Schizophrenia." <em>American Journal of Psychiatry</em>, 160(1), 2003.</div>
+
+    <h3>The search itself is rigged</h3>
+    <p>Apophenia explains why a stray connection gets noticed. <strong>Confirmation bias</strong> explains what happens next: once a theory exists, people search for, interpret, and recall information in ways that favor it, largely without noticing they're doing it. Psychologist Raymond Nickerson's landmark review of this literature calls it "the most problematic" of all cognitive biases precisely because it's invisible from the inside — it doesn't feel like bias, it feels like the evidence keeps agreeing with you. A peer group interrupts this mechanically: someone else runs their own search over the same material and doesn't reliably land on your conclusion, which is the fastest way to notice the search was rigged in the first place. Alone, every new source you find has already been filtered by the theory it's supposed to be testing.</p>
+    <div class="cite">Nickerson, R.S. "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises." <em>Review of General Psychology</em>, 2(2), 1998.</div>
+
+    <h3>Stress turns the dial up</h3>
+    <p>None of this happens at a fixed intensity. A well-known set of experiments found that people who were made to feel they'd lost control over their circumstances — through a rigged task, a recalled memory of powerlessness, workplace instability — became reliably more likely to see patterns in pure visual noise, find correlations in random stock data, endorse conspiracy theories, and develop superstitions, compared to people who felt in control. The effect reversed when people were given a chance to affirm their values and self-worth first. Isolation, financial pressure, health scares, a bad year — anything that erodes someone's sense of control over their life — measurably turns up the same dial this entire site has been describing, independent of anything the person is reading.</p>
+    <div class="cite">Whitson, J.A., Galinsky, A.D. "Lacking Control Increases Illusory Pattern Perception." <em>Science</em>, 322(5898), 2008.</div>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A bar chart showing pattern perception rising as sense of control falls">
+        <line x1="40" y1="20" x2="40" y2="130" class="ic-axis"/>
+        <line x1="40" y1="130" x2="400" y2="130" class="ic-axis"/>
+        <text x="10" y="24" class="ic-axis-label">high</text>
+        <text x="10" y="134" class="ic-axis-label">low</text>
+        <text x="8" y="78" class="ic-axis-title" transform="rotate(-90 8 78)">patterns seen</text>
+
+        <rect x="70" y="105" width="46" height="25" class="ic-bar-teal"/>
+        <text x="93" y="146" text-anchor="middle" class="ic-cat">high control</text>
+        <rect x="160" y="80" width="46" height="50" class="ic-bar-mid"/>
+        <text x="183" y="146" text-anchor="middle" class="ic-cat">moderate</text>
+        <rect x="250" y="45" width="46" height="85" class="ic-bar-rust"/>
+        <text x="273" y="146" text-anchor="middle" class="ic-cat">low control</text>
+        <rect x="340" y="30" width="46" height="100" class="ic-bar-rust2"/>
+        <text x="363" y="146" text-anchor="middle" class="ic-cat">isolated + low</text>
+      </svg>
+      <p class="pv-caption">A rough sketch of the Whitson &amp; Galinsky effect: less felt control over your circumstances tracks with more patterns found in the same random data.</p>
+    </div>
   </div>
 </section>
 
@@ -558,12 +753,45 @@ footer a{color:var(--brass);text-decoration:none;}
 
 <section id="mechanisms">
   <div class="wrap">
-    <span class="eyebrow">05 — Four More Mechanisms</span>
+    <span class="eyebrow">05 — More Mechanisms</span>
     <h2>How this actually happens, mechanically</h2>
-    <p class="lede">Beyond apophenia and the overvalued-idea spectrum, four more specific, verifiable mechanisms explain how solitary esoteric research can tip from an intense hobby into something that erodes a person's grip on reality.</p>
+    <p class="lede">Beyond apophenia and the overvalued-idea spectrum, five more specific, verifiable mechanisms explain how solitary esoteric research can tip from an intense hobby into something that erodes a person's grip on reality.</p>
 
     <h3>Reality monitoring failure</h3>
     <p>Psychologist Marcia Johnson's <strong>source monitoring framework</strong> describes how the brain tags a mental experience as either internally generated (imagination, thought) or externally derived (something actually seen or heard). Hours spent visualizing esoteric symbols or holding metaphysical concepts in mind strengthens exactly the internal-imagery pathways this tagging system has to sort. When that tagging fails, an internally generated thought — a visualized pattern, a felt presence — gets misfiled as an external perception. This is a well-studied cognitive mechanism, not a metaphor.</p>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Internally and externally generated experiences being sorted, with one internal item mistagged as external">
+        <text x="55" y="26" text-anchor="middle" class="rm-lane-label-rust">INTERNAL</text>
+        <rect x="14" y="34" width="82" height="24" rx="3" class="rm-box-rust"/>
+        <text x="55" y="50" text-anchor="middle" class="rm-label">visualized symbol</text>
+        <text x="55" y="90" text-anchor="middle" class="rm-lane-label-teal">EXTERNAL</text>
+        <rect x="14" y="98" width="82" height="24" rx="3" class="rm-box-teal"/>
+        <text x="55" y="114" text-anchor="middle" class="rm-label">something seen</text>
+
+        <path d="M96,46 L170,78" class="rm-line" marker-end="url(#rmArrow1)"/>
+        <path d="M96,110 L170,90" class="rm-line" marker-end="url(#rmArrow2)"/>
+
+        <rect x="176" y="60" width="60" height="40" rx="4" class="rm-sorter"/>
+        <text x="206" y="78" text-anchor="middle" class="rm-label-sm">SOURCE</text>
+        <text x="206" y="90" text-anchor="middle" class="rm-label-sm">TAG</text>
+
+        <path d="M236,72 L300,44" class="rm-line-teal" marker-end="url(#rmArrow3)"/>
+        <text x="330" y="40" text-anchor="middle" class="rm-out-label-teal">tagged external</text>
+
+        <path d="M236,88 L300,116" class="rm-line-rust" marker-end="url(#rmArrow4)"/>
+        <text x="330" y="130" text-anchor="middle" class="rm-out-label-rust">tagged external</text>
+        <text x="330" y="144" text-anchor="middle" class="rm-out-sub-rust">(should say internal)</text>
+
+        <defs>
+          <marker id="rmArrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="rm-arrowhead"/></marker>
+          <marker id="rmArrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="rm-arrowhead"/></marker>
+          <marker id="rmArrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="rm-arrowhead-teal"/></marker>
+          <marker id="rmArrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="rm-arrowhead-rust"/></marker>
+        </defs>
+      </svg>
+      <p class="pv-caption">Both lanes pass through the same tagging step. Under heavy load, an internally generated symbol can come out the other side mislabeled as something that was actually seen.</p>
+    </div>
     <div class="cite">Johnson, M.K., Hashtroudi, S., Lindsay, D.S. "Source Monitoring." <em>Psychological Bulletin</em> 114(1), 3–28, 1993.</div>
 
     <h3>Jung's "psychic inflation"</h3>
@@ -615,6 +843,23 @@ footer a{color:var(--brass);text-decoration:none;}
         <p class="pv-caption">One person, one loop. Confirmation goes out, more confirmation comes back — nothing external ever enters it.</p>
       </div>
     </div>
+
+    <h3>Repetition alone tightens what apophenia loosens</h3>
+    <p>There's a well-established mechanism from depression research that maps onto solitary theorizing more closely than its origin suggests. <strong>Rumination</strong> — repetitively returning to the same thought, alone, without new input — has been shown across dozens of studies to entrench whatever state it's applied to: it strengthens negative thinking, measurably impairs problem-solving, and erodes the social support that might otherwise interrupt it. It was studied in the context of depressed mood, not esoteric belief, so this is a parallel, not an identical claim — but the mechanism it describes is content-neutral. Going over the same theory alone, night after night, isn't the same as reasoning your way to a stronger conclusion. It's closer to grooving a track that gets harder to leave the more times a thought runs down it, whether the thought is despair or a revelation about a hidden pattern.</p>
+    <div class="cite">Nolen-Hoeksema, S., Wisco, B.E., Lyubomirsky, S. "Rethinking Rumination." <em>Perspectives on Psychological Science</em>, 3(5), 2008.</div>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A tightening spiral representing a thought revisited alone, each pass narrower than the last">
+        <path d="M288.0,100.0 L285.3,117.1 L278.9,133.0 L269.2,146.9 L256.8,158.2 L242.4,166.4 L226.7,171.1 L210.5,172.2 L194.7,169.8 L179.9,163.9 L167.0,155.0 L156.6,143.6 L149.0,130.3 L144.6,115.8 L143.5,100.9 L145.8,86.3 L151.1,72.8 L159.3,60.9 L169.7,51.3 L181.9,44.3 L195.1,40.3 L208.7,39.3 L222.0,41.3 L234.4,46.2 L245.2,53.6 L254.0,63.1 L260.4,74.1 L264.0,86.1 L265.0,98.5 L263.1,110.5 L258.7,121.7 L252.0,131.5 L243.5,139.4 L233.6,145.1 L222.8,148.4 L211.7,149.2 L200.9,147.5 L191.0,143.6 L182.3,137.6 L175.2,130.0 L170.2,121.2 L167.3,111.6 L166.6,101.8 L168.1,92.3 L171.6,83.5 L176.8,75.9 L183.5,69.8 L191.3,65.4 L199.6,62.9 L208.2,62.3 L216.4,63.7 L224.0,66.8 L230.5,71.3 L235.7,77.1 L239.4,83.8 L241.5,91.0 L241.9,98.2 L240.7,105.2 L238.0,111.6 L234.1,117.0 L229.2,121.3 L223.6,124.3 L217.6,125.9 L211.6,126.1 L205.9,125.1 L200.8,122.8 L196.5,119.5 L193.1,115.4 L190.8,110.9 L189.6,106.1 L189.6,101.4 L190.6,97.0 L192.5,93.1 L195.2,89.8 L198.3,87.4 L201.8,85.9 L205.4,85.2 L208.9,85.4 L212.0,86.3 L214.7,87.8 L216.8,89.9 L218.3,92.2 L219.1,94.6 L219.3,97.1 L218.9,99.3 L218.0,101.1 L216.8,102.6 L215.4,103.6 L213.9,104.1 L212.5,104.1 L211.2,103.8" fill="none" class="rt-spiral"/>
+        <circle cx="211" cy="104" r="3.5" class="rt-center"/>
+        <text x="210" y="190" text-anchor="middle" class="rt-label">the same thought, revisited alone, again</text>
+        <text x="300" y="105" class="rt-label-dim">first pass —</text>
+        <text x="300" y="118" class="rt-label-dim">wide, exploratory</text>
+        <text x="80" y="140" class="rt-label-dim-rust">later passes —</text>
+        <text x="80" y="153" class="rt-label-dim-rust">narrower, harder to exit</text>
+      </svg>
+      <p class="pv-caption">Nothing new enters between passes. Each return narrows the track a little more than the last one.</p>
+    </div>
   </div>
 </section>
 
@@ -631,9 +876,32 @@ footer a{color:var(--brass);text-decoration:none;}
     <h3>A quieter sense of self</h3>
     <p>fMRI studies of experienced meditators show something concrete happening in the brain during contemplative practice: relative deactivation of the <strong>default mode network (DMN)</strong>, the set of regions most associated with self-referential thought and the ongoing sense of "me." That deactivation is part of what produces feelings of unity or ego dissolution during deep practice — it's real neuroscience, not just a metaphor for a mood. The open question is what holds a person together while that boundary is temporarily down. Traditional settings answered this with heavy social structure around the practitioner during and after the experience. Studying alone removes that structure at precisely the moment the sense of self is least defended.</p>
     <div class="cite">Brewer, J.A., Worhunsky, P.D., Gray, J.R., Tang, Y.Y., Weber, J., Kober, H. "Meditation Experience Is Associated With Differences in Default Mode Network Activity and Connectivity." <em>PNAS</em> 108(50), 2011.</div>
+    <p>Philosophically-minded psychiatry has a name for what it feels like from the inside when that boundary weakens: <strong>ipseity disturbance</strong> (from <em>ipse</em>, Latin for "self"). Psychiatrists Louis Sass and Josef Parnas argue this self-disturbance — not any single symptom — is the deepest common thread running through schizophrenia. It has two faces that sound contradictory but tend to arrive together: <em>hyperreflexivity</em>, where automatic background processes (the felt sense of your own thoughts, your own body) get thrust into the foreground and examined like external objects, and a fading sense of just being simply, unreflectively present as yourself. This isn't a fringe theory — it's still actively debated and refined in the clinical literature two decades on. It maps closely onto what a weakened DMN would predict from the neuroscience side, and it's the more precise language for the "watching myself from outside" feeling this kind of intensive, self-examining practice can produce.</p>
+    <div class="cite">Sass, L.A., Parnas, J. "Schizophrenia, Consciousness, and the Self." <em>Schizophrenia Bulletin</em>, 29(3), 2003.</div>
 
     <h3>Paradox as a trap for a logical mind</h3>
     <p>Anthropologist Gregory Bateson proposed in 1956 that being repeatedly caught in an unresolvable logical contradiction — a "double bind" — could, over time, produce schizophrenic symptoms. It's worth being straightforward about where this idea actually stands: later research broadly failed to support double-bind exposure as a cause of schizophrenia, and the theory is now considered scientifically disconfirmed as an explanation of the illness, even though the term stuck around in family-therapy language. What survives it is a narrower, more defensible observation: koans, alchemical maxims, and other intentionally paradoxical esoteric texts are built to resist binary logic, and a highly systematic mind that treats them as a puzzle with a hidden correct answer can spend enormous cognitive effort trying to "solve" something built to be unsolvable. That's a real source of frustration and fatigue — just not, on current evidence, a documented pathway to psychosis on its own.</p>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A flowchart where both branches of a decision loop back to the same starting point with no exit">
+        <rect x="14" y="70" width="128" height="34" rx="4" class="db-box"/>
+        <text x="78" y="91" text-anchor="middle" class="db-label">"THE WAY UP IS THE WAY DOWN"</text>
+        <path d="M142,87 L182,87" class="db-arrow" marker-end="url(#dbArrow1)"/>
+        <path d="M184,52 L216,20 L248,52 L216,84 z" class="db-diamond"/>
+        <text x="216" y="56" text-anchor="middle" class="db-label-sm">read it</text>
+        <text x="216" y="68" text-anchor="middle" class="db-label-sm">literally,</text>
+        <text x="216" y="80" text-anchor="middle" class="db-label-sm">or as metaphor?</text>
+        <path d="M248,42 C 300,20 340,50 340,87" class="db-loop" fill="none" marker-end="url(#dbArrow2)"/>
+        <path d="M248,62 C 300,90 340,90 340,87" class="db-loop" fill="none" marker-end="url(#dbArrow2)"/>
+        <text x="356" y="91" class="db-label-sm-rust">no exit</text>
+        <defs>
+          <marker id="dbArrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="db-arrowhead"/></marker>
+          <marker id="dbArrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="db-arrowhead-rust"/></marker>
+        </defs>
+      </svg>
+      <p class="pv-caption">Both readings route back to the same unanswered question. The text was built that way on purpose — the cost is the hours spent circling it, not a documented break with reality.</p>
+    </div>
+
     <div class="cite">Bateson, G., Jackson, D.D., Haley, J., Weakland, J. "Toward a Theory of Schizophrenia." <em>Behavioral Science</em>, 1956. On disconfirmation: Koopmans, M. "Schizophrenia and the Family: Double Bind Theory Revisited," 1997.</div>
 
     <h3>When jargon stops being translatable</h3>
@@ -649,6 +917,50 @@ footer a{color:var(--brass);text-decoration:none;}
 
     <h3>When a belief system stops taking outside input</h3>
     <p>Philosophers of science who study conspiracy theories and pseudoscience use the term <strong>self-sealing belief systems</strong> (sometimes "epistemic closure") for a specific structural failure: a framework built so that any evidence against it gets reinterpreted, using the framework's own logic, as further proof of the framework. It's not that the person stops thinking — it's that every tool they're using to check their thinking was issued by the thing being checked. This is exactly what a real peer group interrupts: an outside person isn't running on the same closed logic, so they can name a flaw the internal system is structurally unable to name about itself.</p>
+
+    <div class="compare-viz">
+      <div class="viz-card">
+        <span class="eyebrow">An open system</span>
+        <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evidence flowing in and updating a belief">
+          <rect x="6" y="52" width="52" height="26" rx="3" class="ec-box"/>
+          <text x="32" y="69" text-anchor="middle" class="ec-label">EVIDENCE</text>
+          <path d="M60,65 L98,65" class="ec-arrow-open" marker-end="url(#ecArrowOpen)"/>
+          <circle cx="126" cy="65" r="26" class="ec-belief-open"/>
+          <text x="126" y="60" text-anchor="middle" class="ec-label">BELIEF</text>
+          <text x="126" y="73" text-anchor="middle" class="ec-sublabel">updates</text>
+          <defs>
+            <marker id="ecArrowOpen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" class="ec-arrowhead-open"/>
+            </marker>
+          </defs>
+        </svg>
+        <p class="pv-caption">Contrary evidence reaches the belief and it moves.</p>
+      </div>
+      <div class="viz-card">
+        <span class="eyebrow">A closed system</span>
+        <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evidence bouncing off a barrier while belief only reinforces itself">
+          <rect x="6" y="52" width="52" height="26" rx="3" class="ec-box"/>
+          <text x="32" y="69" text-anchor="middle" class="ec-label">EVIDENCE</text>
+          <line x1="76" y1="40" x2="76" y2="90" class="ec-wall"/>
+          <path d="M60,58 L72,58" class="ec-arrow-closed" marker-end="url(#ecArrowClosed)"/>
+          <path d="M72,72 L60,72" class="ec-arrow-closed" marker-end="url(#ecArrowClosed)"/>
+          <text x="76" y="30" text-anchor="middle" class="ec-sublabel-rust">"relabeled"</text>
+          <circle cx="126" cy="65" r="26" class="ec-belief-closed"/>
+          <path d="M138,50 A20,20 0 1 1 137,80" fill="none" class="ec-selfloop" marker-end="url(#ecArrowClosed2)"/>
+          <text x="126" y="60" text-anchor="middle" class="ec-label">BELIEF</text>
+          <text x="126" y="73" text-anchor="middle" class="ec-sublabel">confirms itself</text>
+          <defs>
+            <marker id="ecArrowClosed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" class="ec-arrowhead-closed"/>
+            </marker>
+            <marker id="ecArrowClosed2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" class="ec-arrowhead-closed"/>
+            </marker>
+          </defs>
+        </svg>
+        <p class="pv-caption">Evidence hits the wall and bounces off relabeled. Belief only ever hears itself.</p>
+      </div>
+    </div>
     <div class="cite">Boudry, M., Hofhuis, S. "On Epistemic Black Holes: How Self-Sealing Belief Systems Develop and Evolve." <em>Theoria</em>, 90(4), 2024.</div>
 
     <h3>The body keeps a tab</h3>
@@ -685,6 +997,36 @@ footer a{color:var(--brass);text-decoration:none;}
     <span class="eyebrow">09 — The Countermeasure</span>
     <h2>What mystery schools actually provided</h2>
     <p>The historical fix was never secrecy or gatekeeping for its own sake. It was two concrete things: <strong>a witness</strong>, and <strong>a tether to ordinary life</strong>. Both are reconstructable without joining an order.</p>
+
+    <div class="compare-viz">
+      <div class="viz-card">
+        <span class="eyebrow">With scaffolding</span>
+        <svg viewBox="0 0 160 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A roof held up by external scaffolding while the central pillar is taken down">
+          <line x1="20" y1="30" x2="140" y2="30" class="se-roof"/>
+          <line x1="30" y1="30" x2="30" y2="120" class="se-scaffold"/>
+          <line x1="130" y1="30" x2="130" y2="120" class="se-scaffold"/>
+          <line x1="30" y1="60" x2="130" y2="60" class="se-scaffold"/>
+          <line x1="30" y1="90" x2="130" y2="90" class="se-scaffold"/>
+          <line x1="30" y1="120" x2="60" y2="90" class="se-scaffold"/>
+          <line x1="130" y1="120" x2="100" y2="90" class="se-scaffold"/>
+          <line x1="30" y1="90" x2="60" y2="60" class="se-scaffold"/>
+          <line x1="130" y1="90" x2="100" y2="60" class="se-scaffold"/>
+          <line x1="80" y1="30" x2="80" y2="70" class="se-pillar-gone"/>
+          <text x="80" y="90" text-anchor="middle" class="se-label">ego</text>
+        </svg>
+        <p class="pv-caption">Mentor and community carry the weight while the center is deliberately loosened.</p>
+      </div>
+      <div class="viz-card">
+        <span class="eyebrow">Without it</span>
+        <svg viewBox="0 0 160 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A roof collapsed with no external scaffolding to hold it once the central pillar is removed">
+          <line x1="15" y1="72" x2="60" y2="42" class="se-roof-fallen"/>
+          <line x1="60" y1="42" x2="145" y2="80" class="se-roof-fallen"/>
+          <line x1="78" y1="95" x2="78" y2="120" class="se-pillar-gone"/>
+          <text x="80" y="138" text-anchor="middle" class="se-label-rust">no exoskeleton</text>
+        </svg>
+        <p class="pv-caption">Nothing else was carrying the load. Algorithms don't provide structural support.</p>
+      </div>
+    </div>
     <div class="anchors">
       <div class="anchor-card">
         <span class="eyebrow">A witness</span>
@@ -703,6 +1045,39 @@ footer a{color:var(--brass);text-decoration:none;}
         <p>Before accepting a major new connection, write down what evidence would change your mind — and check back later whether you'd actually still let it.</p>
       </div>
     </div>
+
+    <h3>Making this concrete</h3>
+    <p>"Find a witness" is easy to agree with and easy to never actually do. In practice it comes down to three unglamorous steps, in this order:</p>
+
+    <div class="pattern-viz">
+      <svg viewBox="0 0 420 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three sequential steps: pick one person, set a regular cadence, give explicit permission to disagree">
+        <circle cx="55" cy="55" r="30" class="ws-node"/>
+        <text x="55" y="51" text-anchor="middle" class="ws-num">1</text>
+        <text x="55" y="100" text-anchor="middle" class="ws-label">pick one</text>
+        <text x="55" y="112" text-anchor="middle" class="ws-label">real person</text>
+
+        <path d="M90,55 L150,55" class="ws-arrow" marker-end="url(#wsArrow1)"/>
+
+        <circle cx="210" cy="55" r="30" class="ws-node"/>
+        <text x="210" y="51" text-anchor="middle" class="ws-num">2</text>
+        <text x="210" y="100" text-anchor="middle" class="ws-label">set a standing</text>
+        <text x="210" y="112" text-anchor="middle" class="ws-label">cadence</text>
+
+        <path d="M245,55 L305,55" class="ws-arrow" marker-end="url(#wsArrow2)"/>
+
+        <circle cx="365" cy="55" r="30" class="ws-node-rust"/>
+        <text x="365" y="51" text-anchor="middle" class="ws-num">3</text>
+        <text x="365" y="100" text-anchor="middle" class="ws-label-rust">say it out loud:</text>
+        <text x="365" y="112" text-anchor="middle" class="ws-label-rust">"tell me if I'm wrong"</text>
+        <defs>
+          <marker id="wsArrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ws-arrowhead"/></marker>
+          <marker id="wsArrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ws-arrowhead"/></marker>
+        </defs>
+      </svg>
+      <p class="pv-caption">Not a support group, not a subject-matter expert — just one specific person, on a schedule, who's been asked directly to push back.</p>
+    </div>
+
+    <p>A few concrete options, roughly in order of how much structure they provide: a standing weekly call with a friend where you talk through what you've been reading, no exceptions; a small reading group — even two or three other people — working through the same source material on a shared schedule; a therapist or counselor, who doesn't need subject-matter expertise to do the one thing that actually matters here, which is asking good questions about your certainty; or, for material with a real institutional lineage, a genuinely vetted teacher or program rather than the first charismatic voice an algorithm surfaces. The common thread in all four is the same: a real person, met with regularly, who has been explicitly told their job is to disagree when something doesn't hold up — not to validate, and not to co-sign.</p>
   </div>
 </section>
 
@@ -747,6 +1122,13 @@ footer a{color:var(--brass);text-decoration:none;}
     <span class="eyebrow">Sources &amp; Further Reading</span>
     <h2>References</h2>
     <ol>
+      <li>Smith, M.D., Johnson, J.J., Hathaway, W. (2009). "Personality Contributions to Belief in Paranormal Phenomena." <em>Individual Differences Research.</em> MacDonald, D.A. (2000). "Spirituality: Description, Measurement, and Relation to the Five Factor Model of Personality." <em>Journal of Personality.</em></li>
+      <li>Krummenacher, P., Mohr, C., Haker, H., Brugger, P. (2010). "Dopamine, Paranormal Belief, and the Detection of Meaningful Stimuli." <em>Journal of Cognitive Neuroscience</em>, 22(8), 1670–1681.</li>
+      <li>Brugger, P. (2001). "From Haunted Brain to Haunted Science: A Cognitive Neuroscience View of Paranormal and Pseudoscientific Thought." In Houran, J. &amp; Lange, R. (Eds.), <em>Hauntings and Poltergeists: Multidisciplinary Perspectives.</em></li>
+      <li>Denisoff, D. "The Hermetic Order of the Golden Dawn, 1888–1901." <em>BRANCH: Britain, Representation and Nineteenth-Century History.</em> Chabad.org, "Is Kabbalah for Everyone?" — on the historical restriction and the 1756 Brody Cherem. Wikipedia, "Rinzai school" — on sanzen and koan training structure.</li>
+      <li>Nickerson, R.S. (1998). "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises." <em>Review of General Psychology</em>, 2(2), 175–220.</li>
+      <li>Whitson, J.A., Galinsky, A.D. (2008). "Lacking Control Increases Illusory Pattern Perception." <em>Science</em>, 322(5898), 115–117.</li>
+      <li>Nolen-Hoeksema, S., Wisco, B.E., Lyubomirsky, S. (2008). "Rethinking Rumination." <em>Perspectives on Psychological Science</em>, 3(5), 400–424.</li>
       <li>Conrad, K. (1958). <em>Die beginnende Schizophrenie: Versuch einer Gestaltanalyse des Wahns.</em> Thieme. English overview: Mishara, A.L. (2010). "Klaus Conrad (1905–1961): Delusional Mood, Psychosis, and Beginning Schizophrenia." <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2800156/" target="_blank" rel="noopener">PMC2800156</a>.</li>
       <li>Jaspers, K. (1913). <em>Allgemeine Psychopathologie.</em> Trans. Hoenig, J. &amp; Hamilton, M.W. (1963), <em>General Psychopathology.</em> Manchester University Press.</li>
       <li>American Psychiatric Association. <em>Diagnostic and Statistical Manual of Mental Disorders</em>, 5th ed. — Schizotypal Personality Disorder criteria; V62.89 Religious or Spiritual Problem.</li>
@@ -759,6 +1141,9 @@ footer a{color:var(--brass);text-decoration:none;}
       <li>Waters, F., Chiu, V., Atkinson, A., Blom, J.D. (2018). "Severe Sleep Deprivation Causes Hallucinations and a Gradual Progression Toward Psychosis With Increasing Time Awake." <em>Frontiers in Psychiatry.</em></li>
       <li>American Psychiatric Association. <em>DSM-5-TR</em> — Depersonalization/Derealization Disorder criteria. Lustyk, M.K.B., Chawla, N., Nolan, R.S., Marlatt, G.A. (2009). "Mindfulness Meditation Research: Issues of Participant Screening, Safety Procedures, and Researcher Training." <em>Advances in Mind-Body Medicine.</em></li>
       <li>Brewer, J.A., Worhunsky, P.D., Gray, J.R., Tang, Y.Y., Weber, J., Kober, H. (2011). "Meditation Experience Is Associated With Differences in Default Mode Network Activity and Connectivity." <em>PNAS</em>, 108(50), 20254–20259.</li>
+      <li>Sass, L.A., Parnas, J. (2003). "Schizophrenia, Consciousness, and the Self." <em>Schizophrenia Bulletin</em>, 29(3), 427–444.</li>
+      <li>Kapur, S. (2003). "Psychosis as a State of Aberrant Salience: A Framework Linking Biology, Phenomenology, and Pharmacology in Schizophrenia." <em>American Journal of Psychiatry</em>, 160(1), 13–23.</li>
+      <li>Lange, R., Thalbourne, M.A., Houran, J., Storm, L. (2000). "The Revised Transliminality Scale: Reliability and Validity Data From a Rasch Top-Down Purification Procedure." <em>Consciousness and Cognition</em>, 9(4), 591–617. Thalbourne, M.A., Delin, P.S. (1994). "A Common Thread Underlying Belief in the Paranormal, Mystical Experience, and Psychopathology." <em>Journal of Parapsychology</em>, 58.</li>
       <li>Bateson, G., Jackson, D.D., Haley, J., Weakland, J. (1956). "Toward a Theory of Schizophrenia." <em>Behavioral Science.</em> Later empirical status: Koopmans, M. (1997). "Schizophrenia and the Family: Double Bind Theory Revisited."</li>
       <li>Boudry, M., Hofhuis, S. (2024). "On Epistemic Black Holes: How Self-Sealing Belief Systems Develop and Evolve." <em>Theoria</em>, 90(4), 429–447.</li>
       <li>Stickgold, R., Malia, A., Maguire, D., Roddenberry, D., O'Connor, M. (2000). "Replaying the Game: Hypnagogic Images in Normals and Amnesics." <em>Science</em>, 290(5490), 350–353.</li>
