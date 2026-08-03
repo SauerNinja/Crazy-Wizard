@@ -1,0 +1,18 @@
+{
+  "name": "Crazy Wizard Syndrome",
+  "short_name": "Crazy Wizard",
+  "description": "A clinically-sourced guide to the psychological risks of solitary esoteric research.",
+  "start_url": "/Crazy-Wizard/",
+  "scope": "/Crazy-Wizard/",
+  "display": "browser",
+  "background_color": "#1b1712",
+  "theme_color": "#1b1712",
+  "lang": "en-US",
+  "icons": [
+    { "src": "favicon-16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "favicon-48.png", "sizes": "48x48", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
