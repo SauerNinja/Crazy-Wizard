@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sauerninja.github.io/Crazy-Wizard/sitemap.xml
