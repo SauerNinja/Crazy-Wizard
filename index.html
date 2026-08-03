@@ -3,6 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Consent Mode v2 — defaults set before gtag.js loads -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'granted'
+});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SW5XPJSYEP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SW5XPJSYEP');
+</script>
+
 <title>Crazy Wizard Syndrome — Why Esoteric Research Needs a Witness</title>
 <meta name="description" content="A clinically-sourced guide to the real psychological risks of solitary occult, esoteric, and magical research — apophenia, overvalued ideas, and when pattern-finding tips into delusion — and how to study safely.">
 <meta name="keywords" content="crazy wizard syndrome, esoteric research risks, occult psychology, apophenia, overvalued idea vs delusion, spiritual emergency, magical thinking, isolated research, schizotypal traits, lone wizard problem">
@@ -132,12 +153,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
 }
 .hero-art-frame{
   display:block;
-  width:210px;
+  width:min(420px, 78vw);
   margin:0 auto 34px;
   position:relative;
-  border-radius:3px;
+  border-radius:4px;
   overflow:hidden;
-  box-shadow:0 0 0 1px var(--ink-line), 0 30px 60px -20px rgba(0,0,0,.6);
+  box-shadow:0 0 0 1px var(--ink-line), 0 40px 80px -24px rgba(0,0,0,.65);
   transition:box-shadow .2s ease;
 }
 .hero-art-frame:hover{
@@ -395,6 +416,48 @@ details p{margin-top:12px;font-size:16px;color:var(--parchment-dim);}
 .note strong{color:var(--teal);}
 
 footer{padding:48px 0 80px;text-align:center;}
+
+.consent-banner{
+  position:fixed;
+  left:0; right:0; bottom:0;
+  z-index:50;
+  background:var(--ink-raised);
+  border-top:1px solid var(--ink-line);
+  box-shadow:0 -10px 30px rgba(0,0,0,.4);
+}
+.consent-inner{
+  max-width:760px;
+  margin:0 auto;
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.consent-inner p{
+  margin:0;
+  font-size:14px;
+  color:var(--parchment-dim);
+  flex:1 1 320px;
+}
+.consent-actions{display:flex;gap:10px;flex-shrink:0;}
+.consent-btn{
+  font-family:var(--font-mono);
+  font-size:13px;
+  padding:9px 16px;
+  border-radius:3px;
+  cursor:pointer;
+  border:1px solid var(--ink-line);
+  transition:opacity .15s ease;
+}
+.consent-btn:hover{opacity:.85;}
+.consent-btn-ghost{background:transparent;color:var(--parchment-dim);}
+.consent-btn-solid{background:var(--brass);color:var(--ink);border-color:var(--brass);font-weight:600;}
+@media (max-width:560px){
+  .consent-inner{flex-direction:column;align-items:stretch;text-align:center;}
+  .consent-actions{justify-content:center;}
+}
 footer p{color:var(--parchment-dim);font-size:14px;font-family:var(--font-mono);}
 footer a{color:var(--brass);text-decoration:none;}
 .footer-art-note{font-size:12px;opacity:.6;margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;}
@@ -405,7 +468,7 @@ footer a{color:var(--brass);text-decoration:none;}
 <header class="hero">
   <div class="wrap">
     <a href="#image-credit" class="hero-art-frame" aria-label="Jump to image credit at the bottom of the page">
-      <img src="hero-art.jpg" alt="A robed hermit kneeling in a forest clearing, feeding a white deer by hand, mountains visible in the distance" width="804" height="1116" loading="eager">
+      <img src="hero-art.jpg" alt="A robed hermit kneeling in a forest clearing, feeding a white deer by hand, mountains visible in the distance" width="932" height="1316" loading="eager">
     </a>
     <p class="hero-art-caption">an educational resource on solitary mystical &amp; occult study</p>
 
@@ -721,6 +784,47 @@ footer a{color:var(--brass);text-decoration:none;}
     <p class="footer-art-note">Hero artwork credited above · not covered by the MIT license</p>
   </div>
 </footer>
+
+<div id="consent-banner" class="consent-banner" role="dialog" aria-label="Cookie consent" hidden>
+  <div class="consent-inner">
+    <p>This site uses Google Analytics to understand traffic. No ad tracking, no personal data sold. You can decline and analytics stays off for you.</p>
+    <div class="consent-actions">
+      <button type="button" id="consent-decline" class="consent-btn consent-btn-ghost">Decline</button>
+      <button type="button" id="consent-accept" class="consent-btn consent-btn-solid">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'cw-consent';
+  var saved = localStorage.getItem(KEY);
+  var banner = document.getElementById('consent-banner');
+
+  function updateConsent(state){
+    gtag('consent', 'update', { 'analytics_storage': state });
+  }
+
+  if (saved === 'denied') {
+    updateConsent('denied');
+  } else if (saved === 'granted') {
+    updateConsent('granted');
+  } else {
+    banner.hidden = false;
+  }
+
+  document.getElementById('consent-accept').addEventListener('click', function(){
+    localStorage.setItem(KEY, 'granted');
+    updateConsent('granted');
+    banner.hidden = true;
+  });
+  document.getElementById('consent-decline').addEventListener('click', function(){
+    localStorage.setItem(KEY, 'denied');
+    updateConsent('denied');
+    banner.hidden = true;
+  });
+})();
+</script>
 
 </body>
 </html>
