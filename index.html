@@ -524,6 +524,7 @@ strong{color:var(--brass);font-weight:600;}
 
 /* anchors grid */
 .anchors{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px;}
+.anchors .anchor-card:last-child:nth-child(odd){grid-column:1 / -1;}
 @media (max-width:560px){.anchors{grid-template-columns:1fr;}}
 .anchor-card{
   background:var(--ink-raised);
@@ -699,14 +700,16 @@ footer a{color:var(--brass);text-decoration:none;}
 
     <h3>What that supervision actually looked like</h3>
     <p>This wasn't a vague gesture toward "tradition." Specific systems built specific, sometimes rigid checkpoints in:</p>
-    <p>Classical Kabbalistic study carried a widely cited restriction limiting deep study of Lurianic Kabbalah to those over forty, married, and already grounded in Talmudic law — the reasoning given was that the material required emotional stability and a finished foundation before it was safe to build on. (Historians note the rule was applied inconsistently and is partly mythologized in retrospect, but the underlying instinct — don't hand this to someone ungrounded — was real and taken seriously enough to write down.) The Hermetic Order of the Golden Dawn, founded in London in 1888, built an explicit graded curriculum: an aspirant had to pass a written examination on each of four elemental grades, then further examinations and the consent of existing adepts, before being permitted to advance — up to eight formal checkpoints between entry and full initiation. Rinzai Zen structures koan study around <em>sanzen</em>, a private, recurring interview where a student presents their understanding directly to a teacher who tests it — a relationship that typically runs for years, sometimes decades, precisely because no one is trusted to self-certify their own insight.</p>
-    <div class="cite">Chabad.org, "Is Kabbalah for Everyone?" (on the 1756 Brody Cherem and its historical context). Denisoff, D. "The Hermetic Order of the Golden Dawn, 1888–1901." <em>BRANCH: Britain, Representation and Nineteenth-Century History.</em> Wikipedia, "Rinzai school," on sanzen and koan training structure.</div>
+    <p>The oldest documented version of this restriction is Jewish, and it's genuinely old: the Mishnah (compiled c. 200 CE) rules in tractate <em>Chagigah</em> 2:1 that the esoteric "Account of the Chariot" (<em>Ma'aseh Merkavah</em>) may not be taught to more than one student at a time, and only to a student the teacher already judges wise enough to grasp most of it unaided — the teacher hands over chapter headings, not the whole doctrine, and the student has to complete the rest through their own understanding. The Talmud attaches a specific cautionary story to this rule: four sages are said to have entered the mystical "orchard" (<em>pardes</em>) together. One died, one lost his sanity, one became an apostate, and only Rabbi Akiva "entered in peace and left in peace." Whatever one makes of the story historically, it was told for a reason — as a direct warning about what happens without exactly the kind of controlled, one-on-one supervision the Mishnah had just prescribed. The Hermetic Order of the Golden Dawn, founded in London in 1888, built a similarly explicit graded curriculum centuries later: an aspirant had to pass a written examination on each of four elemental grades, then further examinations and the consent of existing adepts, before being permitted to advance — up to eight formal checkpoints between entry and full initiation. Rinzai Zen structures koan study around <em>sanzen</em>, a private, recurring interview where a student presents their understanding directly to a teacher who tests it — a relationship that typically runs for years, sometimes decades, precisely because no one is trusted to self-certify their own insight.</p>
+    <div class="cite">Mishnah Chagigah 2:1; Babylonian Talmud, Chagigah 13a–14b (the Pardes narrative). Denisoff, D. "The Hermetic Order of the Golden Dawn, 1888–1901." <em>BRANCH: Britain, Representation and Nineteenth-Century History.</em> Wikipedia, "Rinzai school," on sanzen and koan training structure.</div>
+
+    <p class="dim">Worth being honest about the limits of this pattern, too: it isn't universal even within traditions that clearly valued it. Isaac Luria — the source of an entire later school of Kabbalah — reportedly spent years in solitary seclusion by the Nile studying the Zohar alone before he ever taught anyone, and died at 38, before what later folklore claims was the minimum age to study his own system. The insight came from solitude; the checkpoint arrived afterward, built by the community that received it. That's a real complication, not a footnote to explain away — it suggests the protective function here isn't "never work alone," but "don't be the only person who ever gets to evaluate what solitude produced."</p>
 
     <div class="pattern-viz">
       <svg viewBox="0 0 420 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three historical traditions compared by the number and type of checkpoints required before independent study was permitted">
-        <text x="10" y="18" class="ht-label">Kabbalah (traditional)</text>
+        <text x="10" y="18" class="ht-label">Mishnah Chagigah (c. 200 CE)</text>
         <rect x="10" y="26" width="330" height="14" rx="2" class="ht-bar"/>
-        <text x="10" y="54" class="ht-value">age 40 + marriage + Talmudic grounding</text>
+        <text x="10" y="54" class="ht-value">one student at a time, teacher-vetted</text>
 
         <text x="10" y="80" class="ht-label">Golden Dawn (1888–)</text>
         <rect x="10" y="88" width="230" height="14" rx="2" class="ht-bar"/>
@@ -1102,7 +1105,7 @@ footer a{color:var(--brass);text-decoration:none;}
   <div class="wrap">
     <span class="eyebrow">09 — The Countermeasure</span>
     <h2>What mystery schools actually provided</h2>
-    <p>The historical fix was never secrecy or gatekeeping for its own sake. It was two concrete things: <strong>a witness</strong>, and <strong>a tether to ordinary life</strong>. Both are reconstructable without joining an order.</p>
+    <p>The historical fix was never secrecy or gatekeeping for its own sake. It was three concrete things: <strong>a witness</strong>, <strong>a tether to ordinary life</strong>, and — easy to miss from outside — <strong>a body doing something</strong>. All three are reconstructable without joining an order.</p>
 
     <div class="compare-viz">
       <div class="viz-card">
@@ -1133,6 +1136,12 @@ footer a{color:var(--brass);text-decoration:none;}
         <p class="pv-caption">Nothing else was carrying the load. Algorithms don't provide structural support.</p>
       </div>
     </div>
+
+    <h3>The body was never actually optional</h3>
+    <p>Everything on this site so far has treated esoteric practice as something that mostly happens on a page or a screen — reading, pattern-finding, holding concepts in mind. That's a fair description of how most solitary digital research actually happens, but it's a narrow slice of what mystical practice has historically been. Chant, fasting, controlled breath, physical vigil, prostration, pilgrimage, dance: across traditions, the material was engaged with the whole body, not just worked through conceptually. A framework that treats the mind as the only instrument — and the body as scenery, or an afterthought to manage once it starts breaking down under stress — has already dropped something the traditions themselves didn't.</p>
+    <p>This isn't just a completeness complaint; ritual does specific, measurable psychological work that pure reading doesn't. A major review of the experimental literature found that structured, repeated ritual action reliably reduces anxiety and regulates emotion, independent of whatever beliefs the ritual is attached to — and a separate controlled study found rituals performed immediately before a stressful task measurably lowered anxiety and improved performance, again regardless of whether participants "believed" in the ritual's stated purpose. The mechanism doesn't require a group, either — but groups reliably produce it as a side effect of just existing together, since shared ritual is usually how a group does anything at all. Solitary study, left to default, produces almost none of it. Not because solitude forbids ritual, but because nothing forces it into being the way a group does — a screen and a search bar ask nothing of the body at all.</p>
+    <div class="cite">Hobson, N.M., Schroeder, J., Risen, J.L., Xygalatas, D., Inzlicht, M. "The Psychology of Rituals: An Integrative Review and Process-Based Framework." <em>Personality and Social Psychology Review</em>, 22(3), 2018. Brooks, A.W., Schroeder, J., Risen, J.L., Gino, F., Galinsky, A., Norton, M.I., Schweitzer, M.E. "Don't Stop Believing: Rituals Improve Performance by Decreasing Anxiety." <em>Organizational Behavior and Human Decision Processes</em>, 137, 2016.</div>
+
     <div class="anchors">
       <div class="anchor-card">
         <span class="eyebrow">A witness</span>
@@ -1149,6 +1158,10 @@ footer a{color:var(--brass);text-decoration:none;}
       <div class="anchor-card">
         <span class="eyebrow">A falsifiable pause</span>
         <p>Before accepting a major new connection, write down what evidence would change your mind — and check back later whether you'd actually still let it.</p>
+      </div>
+      <div class="anchor-card">
+        <span class="eyebrow">An actual ritual, not just reading</span>
+        <p>A fixed, repeated, embodied practice — a specific posture, a chant, a breath count, a walk taken the same way each time. The content matters less than the repetition and the body's involvement. This isn't optional decoration on top of the research; it's doing real, separate psychological work the reading alone can't.</p>
       </div>
     </div>
 
@@ -1231,7 +1244,10 @@ footer a{color:var(--brass);text-decoration:none;}
       <li>Smith, M.D., Johnson, J.J., Hathaway, W. (2009). "Personality Contributions to Belief in Paranormal Phenomena." <em>Individual Differences Research.</em> MacDonald, D.A. (2000). "Spirituality: Description, Measurement, and Relation to the Five Factor Model of Personality." <em>Journal of Personality.</em></li>
       <li>Krummenacher, P., Mohr, C., Haker, H., Brugger, P. (2010). "Dopamine, Paranormal Belief, and the Detection of Meaningful Stimuli." <em>Journal of Cognitive Neuroscience</em>, 22(8), 1670–1681.</li>
       <li>Brugger, P. (2001). "From Haunted Brain to Haunted Science: A Cognitive Neuroscience View of Paranormal and Pseudoscientific Thought." In Houran, J. &amp; Lange, R. (Eds.), <em>Hauntings and Poltergeists: Multidisciplinary Perspectives.</em></li>
-      <li>Denisoff, D. "The Hermetic Order of the Golden Dawn, 1888–1901." <em>BRANCH: Britain, Representation and Nineteenth-Century History.</em> Chabad.org, "Is Kabbalah for Everyone?" — on the historical restriction and the 1756 Brody Cherem. Wikipedia, "Rinzai school" — on sanzen and koan training structure.</li>
+      <li>Denisoff, D. "The Hermetic Order of the Golden Dawn, 1888–1901." <em>BRANCH: Britain, Representation and Nineteenth-Century History.</em> Wikipedia, "Rinzai school" — on sanzen and koan training structure.</li>
+      <li>Mishnah, <em>Chagigah</em> 2:1 (c. 200 CE). Babylonian Talmud, <em>Chagigah</em> 13a–14b (the Pardes narrative). Luria biographical details per Encyclopaedia Britannica and Encyclopedia.com, "Isaac ben Solomon Luria."</li>
+      <li>Hobson, N.M., Schroeder, J., Risen, J.L., Xygalatas, D., Inzlicht, M. (2018). "The Psychology of Rituals: An Integrative Review and Process-Based Framework." <em>Personality and Social Psychology Review</em>, 22(3), 260–284.</li>
+      <li>Brooks, A.W., Schroeder, J., Risen, J.L., Gino, F., Galinsky, A., Norton, M.I., Schweitzer, M.E. (2016). "Don't Stop Believing: Rituals Improve Performance by Decreasing Anxiety." <em>Organizational Behavior and Human Decision Processes</em>, 137, 71–85.</li>
       <li>Nickerson, R.S. (1998). "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises." <em>Review of General Psychology</em>, 2(2), 175–220.</li>
       <li>Whitson, J.A., Galinsky, A.D. (2008). "Lacking Control Increases Illusory Pattern Perception." <em>Science</em>, 322(5898), 115–117.</li>
       <li>Nolen-Hoeksema, S., Wisco, B.E., Lyubomirsky, S. (2008). "Rethinking Rumination." <em>Perspectives on Psychological Science</em>, 3(5), 400–424.</li>
