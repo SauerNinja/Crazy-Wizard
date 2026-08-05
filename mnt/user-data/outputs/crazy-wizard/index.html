@@ -53,6 +53,7 @@ gtag('consent', 'default', {
 <meta name="twitter:image" content="https://sauerninja.github.io/Crazy-Wizard/og-image.png">
 <meta name="twitter:image:alt" content="Crazy Wizard Syndrome — a hooded figure feeding a white deer in a forest">
 
+<link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
@@ -179,6 +180,23 @@ body{
 }
 ::selection{background:var(--brass-dim);color:var(--parchment);}
 a{color:var(--teal);}
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:0;
+  z-index:100;
+  background:var(--brass);
+  color:var(--ink);
+  padding:12px 20px;
+  font-family:var(--font-mono);
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:0 0 4px 0;
+}
+.skip-link:focus{
+  left:0;
+}
 a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--teal);outline-offset:3px;}
 
 .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
@@ -631,6 +649,8 @@ footer a{color:var(--brass);text-decoration:none;}
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to content</a>
+
 <header class="hero">
   <div class="wrap">
     <a href="#image-credit" class="hero-art-frame" aria-label="Jump to image credit at the bottom of the page">
@@ -645,7 +665,7 @@ footer a{color:var(--brass);text-decoration:none;}
   </div>
 </header>
 
-<main>
+<main id="main-content">
 
 <section id="premise">
   <div class="wrap">
